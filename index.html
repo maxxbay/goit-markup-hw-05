@@ -64,7 +64,7 @@
         <section class="hero">
             <div class="container background-hero">
                 <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-                <button type="button" name="Order the service" class="button">Заказать услугу</button>
+                <button type="button" name="Order the service" class="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -125,12 +125,18 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <!-- Картинки середини -->
                 <ul class="section-images">
-                    <li class="item"><img src="./images/box1.jpg" alt="Перша картинка середини" width="370px"
-                            height="294px"></li>
-                    <li class="item"><img src="./images/box2.jpg" alt="Друга картинка середини" width="370px"
-                            height="294px"></li>
-                    <li class="item"><img src="./images/box3.jpg" alt="Третя картинка середини" width="370px"
-                            height="294px"></li>
+                    <li class="item"><img src="./images/box1.jpg" alt="Десктопные приложения" width="370px"
+                        height="294px">
+                        <p class="section-text-image">Десктопные приложения</p>
+                        </li>
+                    <li class="item"><img src="./images/box2.jpg" alt="Мобильные приложения" width="370px"
+                            height="294px">
+                        <p class="section-text-image">Мобильные приложения</p>
+                    </li>
+                    <li class="item"><img src="./images/box3.jpg" alt="Дизайнерские решения" width="370px"
+                            height="294px">
+                    <p class="section-text-image">Дизайнерские решения</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -399,6 +405,23 @@
         </div>
 
     </footer>
+
+    <!--  МОДАЛЬНЕ ВІКНО  -->
+     <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" type="button" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        </div>
+    </div>
+
+    <!-- SCRIPT STYLE -->
+
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
